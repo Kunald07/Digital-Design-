@@ -1,0 +1,426 @@
+@font-face {
+    font-family: brand;
+    src: url(./brandd.ttf);
+  }
+  @font-face {
+    font-family: brandi;
+    src: url(./6035twklausanne.woff2);
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: brand;
+    src: url(./3413twklausanne.woff2);
+    font-weight: 900;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: brand;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    background-color: #000000;
+    background-color: #f9f7f4;
+  }
+  #cursor {
+    height: 25px;
+    width: 25px;
+    position: fixed;
+    background-color: rgb(213, 247, 45);
+    border-radius: 50px;
+    padding: 4px;
+    z-index: 99;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  #cursor h5 {
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 500;
+    animation-name: cursor-move;
+    animation-duration: 3s;
+    font-size: 0.7vw;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes cursor-move {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    padding: 2.5vw 1vw;
+  }
+  .brandiumLogo {
+    mix-blend-mode: difference;
+  }
+  nav svg {
+    height: 3.5vw;
+  }
+  .nav-part2 {
+    width: 10%;
+    line-height: 1.5;
+  }
+  .nav-part2 h4 {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: #000;
+    font-family: brandi;
+    mix-blend-mode: difference;
+  }
+  .nav-part2 :nth-child(2),
+  :nth-child(4),
+  :nth-child(6),
+  :nth-child(8),
+  :nth-child(10),
+  :nth-child(12) {
+    display: none;
+  }
+  
+  #page1 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+    position: relative;
+    padding-top: 3vw;
+    padding-left: 3vw;
+    background-image: url(https://images.unsplash.com/photo-1526413232644-8a40f03cc03b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 50% 50%;
+    padding-bottom: 50vh;
+  }
+  .page1-text {
+    height: fit-content;
+    overflow: hidden;
+  }
+  #page1 h1 {
+    font-size: 18vw;
+    font-weight: 400;
+    line-height: 17vw;
+    color: #ffffff;
+    letter-spacing: -10px;
+    mix-blend-mode: exclusion;
+  }
+  #page1 h1 span {
+    display: inline-block;
+  }
+  #page2 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    padding: 22vh 6vw;
+  }
+  #page2 h3 {
+    color: rgb(213, 247, 45);
+    font-size: 1.5vw;
+    font-weight: 200;
+    margin-bottom: 3vh;
+  }
+  #page2 p {
+    color: #fff;
+    font-size: 3.8vw;
+    width: 85%;
+    font-weight: 100;
+    line-height: 4.5vw;
+  }
+  p span {
+    display: inline-block;
+    display: inline;
+  }
+  #page2 button {
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 1.4vw;
+    font-weight: 400;
+    border: none;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    margin: 10vh 0;
+  }
+  #btn-div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(213, 247, 45);
+  }
+  
+  #page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
+  }
+  #page3 h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 12vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 10vw;
+    
+  }
+  #page3 h1 span {
+    display: inline-block;
+  }
+  #container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15vh 4vw;
+    gap: 5vw;
+  }
+  .card {
+    height: 110vh;
+    width: 42vw;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .card h2 {
+    font-family: monospace;
+    font-size: 1.8vw;
+    color: #fff;
+    font-weight: 100;
+    margin-top: 2vw;
+  }
+  .card p {
+    font-size: 0.8vw;
+    color: #dadada;
+  }
+  .card .image-div {
+    height: 90%;
+    width: 42vw;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all ease-out 0.3s;
+  }
+  .card video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: all ease-out 0.3s;
+  }
+  .card:hover img {
+    scale: 1.15;
+  }
+  .card:hover video {
+    scale: 1.15;
+  }
+  #page3-text {
+    display: flex;
+    align-items: center;
+    gap: 25vw;
+  }
+  #page3-text p {
+    width: 50%;
+    color: #fff;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    margin-left: 5vw;
+    margin-top: 5vh;
+  }
+  #page3 button {
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 1.4vw;
+    font-weight: 400;
+    border: none;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    gap: 10px;
+  }
+  #btn-div2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(213, 247, 45);
+  }
+  .string {
+    height: 160px;
+    width: 75%;
+    display: flex;
+    align-items: center;
+  }
+  #page3 .string {
+    margin-left: 4vw;
+    margin-top: 10vh;
+  }
+  #page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f9f7f4;
+    border-top-left-radius: 140px;
+    border-top-right-radius: 140px;
+    position: relative;
+    padding-top: 30vh;
+    padding-left: 10%;
+  }
+  #page4 > h1 {
+    font-size: 12vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: -10px;
+    width: 90%;
+  }
+  #moving-image {
+    height: 45vw;
+    width: 30vw;
+    
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: 8;
+   
+  }
+  #moving-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #imageContainer {
+   
+    margin-top: 8vw;
+    position: relative;
+   
+  }
+  #imageContainer .imageData {
+    padding: 12vh 0;
+    border-top: 1px solid #000000;
+    position: relative;
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    z-index: 9;
+  }
+  .imageData h1 {
+    font-size: 4vw;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  #page4 button {
+    margin-top: 10vh;
+    padding: 20px 25px;
+    border-radius: 30px;
+    font-size: 1.4vw;
+    font-weight: 400;
+    border: none;
+    background-color: rgb(213, 247, 45);
+    position: relative;
+    display: flex;
+    gap: 10px;
+    left: 35%;
+  }
+  #btn-div3 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+  }
+  #page5 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f9f7f4;
+    padding-top: 48vh;
+  }
+  #page5 h1 {
+    color: #000;
+    font-size: 12vw;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30vh;
+  }
+  #logos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4vw;
+  }
+  .logo {
+    padding: 5vh 7vw;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  .logo img {
+    width: 18vh;
+  }
+  #page6 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f9f7f4;
+    padding: 30vh 10vw;
+  }
+  #page6 > h1 {
+    font-size: 12vw;
+    font-weight: 400;
+    margin-bottom: 20vh;
+  }
+  #page6 .awards {
+    border-top: 1px solid #00000077;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  
+  .awards .awards-part1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .awards-part2 {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+  }
+  .awards-part2 h1 {
+    font-size: 4.5vw;
+    width: 40%;
+  }
+  .awards-part2 p {
+    width: 55%;
+    font-size: 1.5vw;
+    line-height: 1.6;
+    color: #000;
+    opacity: 0.7;
+  }
+  .awards-part1 .btn-div {
+    text-align: center;
+    border: 1px solid rgb(100, 97, 97);
+    border-radius: 15px;
+    padding: 8px 12px;
+  }
+  
